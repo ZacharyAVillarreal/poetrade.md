@@ -1,0 +1,109 @@
+{
+  "id": "3773c2e0-ee81-4539-9c0d-ce6784b93af3",
+  "version": "2.0",
+  "name": "poe.trade test",
+  "url": "http://poe.trade",
+  "tests": [{
+    "id": "071aa494-1ce3-41a2-a968-976c054a3051",
+    "name": "poe.trade headhunter search",
+    "commands": [{
+      "id": "8301bd63-2f99-4b61-9fea-dbe48aed84f8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5df08ede-5dd1-4883-896e-2ad97cdf2e89",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "998x760",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29e6b895-597a-4ea2-ae9e-a50cc4ec7811",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div[2]/div/div/div[2]/span/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3db71de0-df6e-45f1-9ad6-98c6df348e7b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div[2]/div/div/div[2]/span/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "headhunter"
+    }, {
+      "id": "e4e9312a-5c31-489e-a161-a3a1fa1b89ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.chosen-with-drop > .chosen-single > div",
+      "targets": [
+        ["css=.chosen-with-drop > .chosen-single > div", "css:finder"],
+        ["xpath=//form[@id='search']/div[2]/div[16]/div[2]/div[2]/div/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16f471db-2a38-4a04-b4cb-4ea843354f4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active-result:nth-child(3)",
+      "targets": [
+        ["css=.active-result:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='search']/div[2]/div[16]/div[2]/div[2]/div/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af164a35-6c0f-4a2e-9058-f3030dd263ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.large-offset-8 > .search",
+      "targets": [
+        ["css=.large-offset-8 > .search", "css:finder"],
+        ["xpath=//input[@value='Search!']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/div[3]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9001a8a-0394-4eca-a985-df876740c1d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item-container-0 .item-cell .sortable:nth-child(4)",
+      "targets": [
+        ["css=#item-container-0 .item-cell .sortable:nth-child(4)", "css:finder"],
+        ["xpath=//tbody[@id='item-container-0']/tr/td[2]/ul[2]/li/ul[2]/li[4]", "xpath:idRelative"],
+        ["xpath=//ul[2]/li[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b0db11e4-58bf-4325-a3f0-9bbfd1ea6e3a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["071aa494-1ce3-41a2-a968-976c054a3051"]
+  }],
+  "urls": ["http://poe.trade/"],
+  "plugins": []
+}
